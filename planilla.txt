@@ -1,3 +1,2 @@
 Trabajador | Cargo | Sueldo Bruto | Desc. Salud | Desc. AFP | Luiquido a pagar 
-nico | analista de datos | 1000000 | 70000.0 | 120000.0Trabajador | Cargo | Sueldo Bruto | Desc. Salud | Desc. AFP | Luiquido a pagar 
-maslk | analista de datos | 1000000 | 70000.0 | 120000.0
+rena | ceo | 1000000 | 70000.0 | 120000.0

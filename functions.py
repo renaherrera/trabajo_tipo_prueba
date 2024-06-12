@@ -1,3 +1,5 @@
+import os
+
 def funcion_imprimir(p_trabajadores, p_cargo_imprmir):
     with open ("planilla.txt", "w", newline="") as archivo :
         for i in range(len(p_trabajadores)):
@@ -10,6 +12,7 @@ def funcion_imprimir(p_trabajadores, p_cargo_imprmir):
                 escritor = archivo.write(f"{p_trabajadores[i]["nombre"]} | {p_trabajadores[i]["cargo"]} | {p_trabajadores[i]["sueldo_bruto"]} | {desc_salud} | {desc_afp}")
 
 def funcion_imprimir_trabajadores(p_trabajadores):
+    os.system("cls")
     for i in range(len(p_trabajadores)):
         des_salud = p_trabajadores[i]["sueldo_bruto"] * 7/100
         des_afp = p_trabajadores[i]["sueldo_bruto"] * 12/100
