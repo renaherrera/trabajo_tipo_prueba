@@ -1,4 +1,7 @@
 import os
+from functions import *
+
+os.system("cls")
 
 trabajadores = []
 cargos = []
@@ -14,19 +17,15 @@ while True:
     print("-"*50)
     opc = int(input("Ingrese la opción que deseea: "))
 
-    if opc == 1:
-        trabajador = input("Ingrese el nombre del trabajador: ")
-        cargo = input("Ingrese el cargo del trabajador: ")
-        sueldo_burto = input("Ingrese el sueldo burto del trabajador: ")
+    os.system("cls")
 
-        trabajadores.append(trabajador)
-        cargos.append(cargo)
-        sueldos_burto.append(sueldo_burto)
+    if opc == 1:
+        pedir_datos(trabajadores)
     elif opc == 2:
-        for i in range(len(trabajadores)):
-            print(f"Trabajadores: {trabajadores[i]} | Cargo {cargos[i]} | Sueldo Bruto: {sueldos_burto[i]}")
+        funcion_imprimir_trabajadores(trabajadores)
     elif opc == 3:
-        pass
+        cargo_imprimir = input("Ingrese el cargo que deseea imprimir: ")
+        funcion_imprimir(trabajadores, cargo_imprimir)
     else:
         print("Adiós!")
         break
